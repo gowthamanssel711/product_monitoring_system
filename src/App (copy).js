@@ -1,7 +1,6 @@
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import Navbar from "./Components/Navigation/Navbar.js";
 import {BrowserRouter as Router , Switch, Route} from 'react-router-dom';
 
@@ -10,14 +9,12 @@ import Dashboard from './Components/Dashboard';
 import Configuration from './Components/Configuration';
 import Devices from './Components/Devices';
 import Contact from './Components/Contact';
-import Login from './Components/Login/Login';
-
 
 
 
 function App() {
   return (
-    <div className="App">
+    <div >
      
      {/*<div className='App'> <h1> Product Monitoring System </h1></div>    &nbsp; */} 
      
@@ -31,7 +28,6 @@ function App() {
         <Route exact path='/Configuration' component={Configuration} />
           <Route exact path='/Devices' component={Devices} />
             <Route exact path='/Contact' component={Contact} />
-              <Route exact path='/login' component={Login} />
       </Switch>
       
       </Router>
